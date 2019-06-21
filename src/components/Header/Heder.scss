@@ -1,5 +1,10 @@
 .app-header {
   display: flex;
+  background-color: black;
+  color: #FFF;
+  height: 50px;
+  align-items: center;
+  padding-left: 20px;
 
   .app-name {
     font-weight: bold;
@@ -7,6 +12,7 @@
   }
 
   a {
+    color: #FFF;
     margin-right: 20px;
   }
 }

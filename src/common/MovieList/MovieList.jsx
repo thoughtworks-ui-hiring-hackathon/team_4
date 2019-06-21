@@ -10,7 +10,7 @@ export default class MovieList extends React.PureComponent {
 			<div className='movies'>
 				{
 					movies.map(movie =>
-						<Movie data={movie}/>
+						<Movie key={movie.id} data={movie}/>
 					)
 				}
 			</div>
