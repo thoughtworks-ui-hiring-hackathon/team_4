@@ -1,0 +1,13 @@
+.movie-details {
+  display: flex;
+  flex-direction: column;
+
+  .poster {
+    display: flex;
+    flex-grow: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -18,9 +18,9 @@ class Home extends React.PureComponent {
 	}
 
 	render() {
-		const {latestMovies: movie} = this.props;
+		const {latestMovies} = this.props;
 		return (
-			<MovieList movies={movie}/>
+			<MovieList movies={latestMovies}/>
 		);
 	}
 }
