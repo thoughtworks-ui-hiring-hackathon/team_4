@@ -1,4 +1,5 @@
 import React from 'react';
+import './Movie.scss';
 
 export default class Movie extends React.PureComponent {
 
@@ -7,7 +8,7 @@ export default class Movie extends React.PureComponent {
 		return (
 			<div className='movie'>
 				<div className='poster'>
-					<img src={data.poster_path}/>
+					<img src={`https://image.tmdb.org/t/p/w500${data.poster_path}`}/>
 				</div>
 				<div className='name'>
 					{data.original_title}
