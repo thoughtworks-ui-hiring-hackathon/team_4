@@ -1,11 +1,15 @@
 .movie {
   display: flex;
   flex-direction: column;
+  margin: 20px;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px grey;
+  padding: 5px;
 
   .poster {
-    width: 100px;
     height: 150px;
     overflow: hidden;
+    width: 200px;
 
     img {
       width: 100%;

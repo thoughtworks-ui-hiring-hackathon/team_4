@@ -5,11 +5,11 @@ import './MovieList.scss';
 export default class MovieList extends React.PureComponent {
 
 	render() {
-		const {movies} = this.props;
+		const {movies = []} = this.props;
 		return (
 			<div className='movies'>
 				{
-					(movies || []).map(movie =>
+					movies.map(movie =>
 						<Movie data={movie}/>
 					)
 				}
