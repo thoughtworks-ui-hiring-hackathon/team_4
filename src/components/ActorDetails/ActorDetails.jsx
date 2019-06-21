@@ -2,13 +2,13 @@ import React from 'react';
 import './ActorDetails.scss';
 
 class ActorDetails extends React.PureComponent {
-    constructor() {
-        super(props);
-    }
+	constructor(props) {
+		super(props);
+	}
 
-    render () {
-        return <div>Actor</div>;
-    }
+	render() {
+		return <div>Actor</div>;
+	}
 }
 
 export default ActorDetails;
