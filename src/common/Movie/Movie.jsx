@@ -16,13 +16,11 @@ class Movie extends React.PureComponent {
 				<div className='name'>
 					{data.original_title}
 				</div>
-				<div className='genre'>{genre.join(',')}</div>
+				<div className='genre'>{genre.join(', ')}</div>
 				<div className='footer'>
-					{/*<div className='popularity'>
-						5 star
-					</div>*/}
+					<div className='popularity'>{data.vote_average}</div>
 					<div className='link'>
-						<Link to={`/details/${data.id}`}>show more</Link>
+						<Link to={`/details/${data.id}`}>Show more</Link>
 					</div>
 				</div>
 			</div>

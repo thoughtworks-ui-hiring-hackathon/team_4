@@ -1,9 +1,9 @@
 .movie {
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 10px;
   border: 1px solid lightgray;
-  box-shadow: 1px 1px grey;
+  box-shadow: 0 1px 3px 3px #e3dddd;
   padding: 5px;
 
   .poster {
@@ -15,5 +15,23 @@
       width: 100%;
       height: 100%;
     }
+  }
+
+  .name {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 0 5px;
+  }
+
+  .genre {
+    padding: 0 5px;
+  }
+
+  .footer {
+    margin-top: 5px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
   }
 }
