@@ -43,7 +43,7 @@ class Movie extends React.PureComponent {
 				<div className='genre'>{genre.join(', ')}</div>
 				<div className='footer'>
 					<div className='popularity'>{data.vote_average}</div>
-					<div className='link'>
+					<div className='link' onClick={(e) => e.stopPropagation()}>
 						<Link to={`/details/${data.id}`}>Show more</Link>
 					</div>
 				</div>
