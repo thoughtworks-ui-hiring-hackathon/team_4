@@ -31,7 +31,7 @@ export const getLatestMovies = () => (dispatch) => {
 			latestMovies.push(movie.id);
 			dispatch(addMovie(movie));
 		});
-		dispatch(updateLatestMovies(latestMovies));
+		dispatch(updateLatestMovies(latestMovies.slice(0, 10)));
 	});
 };
 
@@ -44,7 +44,7 @@ export const getTrendingMovies = () => (dispatch) => {
 			trendingMovies.push(movie.id);
 			dispatch(addMovie(movie));
 		});
-		dispatch(updateTrendingMovies(trendingMovies));
+		dispatch(updateTrendingMovies(trendingMovies.slice(0, 10)));
 	});
 };
 
@@ -57,6 +57,6 @@ export const getPopularMovies = () => (dispatch) => {
 			popularMovies.push(movie.id);
 			dispatch(addMovie(movie));
 		});
-		dispatch(updatePopularMovies(popularMovies));
+		dispatch(updatePopularMovies(popularMovies.slice(0, 10)));
 	});
 };

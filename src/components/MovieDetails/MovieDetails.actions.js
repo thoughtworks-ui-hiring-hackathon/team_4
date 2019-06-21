@@ -19,6 +19,6 @@ export const getRelatedMovies = (id) => (dispatch) => {
 			latestMovies.push(movie.id);
 			dispatch(addMovie(movie));
 		});
-		dispatch(updateRelatedMovies(latestMovies));
+		dispatch(updateRelatedMovies(latestMovies.slice(0, 10)));
 	});
 };
