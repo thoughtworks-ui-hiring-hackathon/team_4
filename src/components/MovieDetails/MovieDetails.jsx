@@ -4,6 +4,7 @@ import {getRelatedMovies} from './MovieDetails.actions';
 import {connect} from 'react-redux';
 import {getRelatedMoviesSelector} from './MovieDetails.selector';
 import MovieList from '../../common/MovieList/MovieList';
+import {Link} from "react-router-dom";
 import './MovieDetails.scss';
 
 class MovieDetails extends React.PureComponent {
@@ -61,7 +62,16 @@ class MovieDetails extends React.PureComponent {
 						</div>
 						<div className='field cast'>
 							<div className='label'>Cast:</div>
-							<div className='value'>{movie.credits.cast.map(g => g.name).join(',')}</div>
+							<div className='value'>{
+								movie.credits.cast.map(g => {
+									return (<div className='link'>
+										<Link to={`/actor/${g.id}`}>
+											<span>{g.name},</span>
+										</Link>
+									</div>)
+								})
+								}
+							</div>
 						</div>
 						<div className='field director'>
 							<div className='label'>Director:</div>
