@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import './Movie.scss';
 
 export default class Movie extends React.PureComponent {
@@ -19,7 +20,7 @@ export default class Movie extends React.PureComponent {
 						5 star
 					</div>
 					<div className='link'>
-						show more
+						<Link to={`/details/${data.id}`}>show more</Link>
 					</div>
 				</div>
 			</div>
