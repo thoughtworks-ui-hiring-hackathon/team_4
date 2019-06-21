@@ -9,9 +9,10 @@ import App from './app';
 
 ReactDOM.render(
 	<Provider store={configureStore()}>
-		<Router>
+		<App/>
+		{/*<Router>
 			<Route path="/" component={App}/>
-		</Router>
+		</Router>*/}
 	</Provider>,
 	document.getElementById('root')
 );

@@ -1,7 +1,22 @@
 export default (state = {}, action) => {
 	switch (action.type) {
-		case 'GET_ALL_MOVIES': {
-			return state;
+		case 'UPDATE_LATEST_MOVIES': {
+			return {
+				...state,
+				latestMovies: action.payload,
+			};
+		}
+		case 'UPDATE_TRENDING_MOVIES': {
+			return {
+				...state,
+				trendingMovies: action.payload,
+			};
+		}
+		case 'UPDATE_POPULAR_MOVIES': {
+			return {
+				...state,
+				popularMovies: action.payload,
+			};
 		}
 		default:
 			return state;

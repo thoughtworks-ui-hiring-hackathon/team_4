@@ -1,5 +1,6 @@
 import React from 'react';
 import Movie from '../Movie/Movie';
+import './MovieList.scss';
 
 export default class MovieList extends React.PureComponent {
 
