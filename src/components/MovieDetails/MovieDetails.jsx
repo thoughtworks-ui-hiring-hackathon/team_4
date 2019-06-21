@@ -71,10 +71,13 @@ class MovieDetails extends React.PureComponent {
 						</div>
 					</div>
 				</div>
-				<div className='related-movies'>
-					<div className='title'>Related Movies</div>
-					<MovieList movies={relatedMovies}/>
-				</div>
+				{
+					relatedMovies.length > 0 &&
+					<div className='related-movies'>
+						<div className='title'>Related Movies</div>
+						<MovieList movies={relatedMovies}/>
+					</div>
+				}
 			</div>
 		);
 	}

@@ -27,7 +27,7 @@ export const getLatestMovies = () => (dispatch) => {
 		return res.json();
 	}).then(res => {
 		const latestMovies = [];
-		res.results.map(movie => {
+		res.results.forEach(movie => {
 			latestMovies.push(movie.id);
 			dispatch(addMovie(movie));
 		});
@@ -40,7 +40,7 @@ export const getTrendingMovies = () => (dispatch) => {
 		return res.json();
 	}).then(res => {
 		const trendingMovies = [];
-		res.results.map(movie => {
+		res.results.forEach(movie => {
 			trendingMovies.push(movie.id);
 			dispatch(addMovie(movie));
 		});
@@ -53,7 +53,7 @@ export const getPopularMovies = () => (dispatch) => {
 		return res.json();
 	}).then(res => {
 		const popularMovies = [];
-		res.results.map(movie => {
+		res.results.forEach(movie => {
 			popularMovies.push(movie.id);
 			dispatch(addMovie(movie));
 		});

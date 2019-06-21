@@ -1,3 +1,13 @@
-.movie-carousel {
-    margin-bottom: 100px;
+
+.home-page {
+  margin-top: 10px;
+
+  .movie-carousel {
+    margin-bottom: 20px;
+    padding: 0 20px;
+
+    h1 {
+      margin: 0;
+    }
+  }
 }

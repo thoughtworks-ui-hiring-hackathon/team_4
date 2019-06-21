@@ -15,7 +15,7 @@ export const getRelatedMovies = (id) => (dispatch) => {
 		return res.json();
 	}).then(res => {
 		const latestMovies = [];
-		res.results.map(movie => {
+		res.results.forEach(movie => {
 			latestMovies.push(movie.id);
 			dispatch(addMovie(movie));
 		});
